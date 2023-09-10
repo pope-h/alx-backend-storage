@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 '''A module with tools for request caching and tracking.
 '''
-import redis
-import requests
 from functools import wraps
 from typing import Callable
-
+import redis
+import requests
 
 redis_store = redis.Redis()
 '''The module-level Redis instance.
